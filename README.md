@@ -73,6 +73,27 @@ Estudo do comportamento do agricultor:
 - A cooperativa está interessada em conhecer a lista dos 10 agricultores que produzem menos, considerando cada tipo de alimento, para apoia-los com treinamentos para melhorarem seu desempenho. 
 - A cooperativa também está interessada em conhecer a lista dos 10 agricultores que mais produzem, considerando cada tipo de alimento, para identificar eventuais melhorias no processo de produção de alimentos que possa ser replicada aos demais agricultores;
 
+## Estrutura do projeto
+
+- [Arquitetura](./arquitetura/)
+
+Arquitetura do projeto de DW com nosso diagrama de fluxo de dados desenhado pelo time de arquitetos da ong “FIAP Agriculturando com tecnologia”.
+
+- [Modelagem](./modelagem/)
+
+Scripts para criar e popular o banco de dados do projeto de DW. 
+
+- [BI](./bi/)
+
+Visualização dos dados no aplicativo Power BI.
+
+
+## Extra: Dashboard
+
+<img src="./bi/dashboard powerbi.png" alt="dashboard" width="700">
+
+Acesso ao Dashboard: [PowerBI](./bi/Dashboard.pbix)
+
 ## Grupo
 - Felipe Toscano da Silva – RM 81515
 - Gabriel Siqueira Petillo – RM 81238
