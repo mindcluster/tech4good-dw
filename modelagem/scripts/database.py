@@ -16,10 +16,9 @@ class Database:
         mycursor.execute("SELECT * FROM " + table)
         return mycursor.fetchall()
 
-    def insert(self, sql):
-        print(sql)
+    def insert(self, sql, data):
         mycursor = self.mydb.cursor()
-        mycursor.execute(sql)
+        mycursor.executemany(sql, data)
 
         self.mydb.commit()
         print(mycursor.rowcount, "record inserted.")

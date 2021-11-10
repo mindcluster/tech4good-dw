@@ -43,7 +43,7 @@ def get_producers():
     producers = []
     fake = Faker()
 
-    for i in range(1, 150):
+    for i in range(1, 15):
         producer = {
             "name": fake.name(),
             "age": random.randint(18, 65),
@@ -82,15 +82,22 @@ def get_items():
 def get_fact_productions():
     fact_productions = []
 
-    for i in range(1, 1000):
-        fact_production = {
-            "date_id": random.randint(1, 365),
-            "item_id": random.randint(1, 19),
-            "producer_id": random.randint(1, 149),
-            "location_id": random.randint(1, 1940),
-            "qtd_product": random.randint(1, 100),
-            "excess": random.randint(0, 1)
-        }
-        fact_productions.append(fact_production)
+    for producer_id in range(1, 15):
+        location_id = random.randint(1, 1940)
+
+        for item_id in range(1, 15):
+
+            for date_id in range(1, 365):
+                qtd_product = random.randint(1, 10)
+
+                fact_production = {
+                    "date_id": date_id,
+                    "item_id": item_id,
+                    "producer_id": producer_id,
+                    "location_id": location_id,
+                    "qtd_product": qtd_product,
+                    "qtd_excess": qtd_product - 7 if qtd_product > 7 else 0
+                }
+                fact_productions.append(fact_production)
 
     return fact_productions
