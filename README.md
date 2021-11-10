@@ -2,6 +2,8 @@
 
 <img alt="Arquitetura da Solução" src="./arquitetura/DW Fome Zero.drawio.png">
 
+<details>
+<summary>Desafio</summary>
 Dentre os 17 objetivos interconectados apresentados pela ONU, um deles 
 trata de assunto ligado a agricultura e sustentabilidade. Esse tema tem relação 
 direta com o Brasil, considerando o expressivo tamanho territorial do país e o 
@@ -57,14 +59,12 @@ O grupo deve aplicar os conceitos de um DW que permitam o
 armazenamento e análise dos dados produzidos pelos agricultores da
 cooperativa. Realize as entregas 1 e 2 e participe da entrega de uma solução 
 tecnológica que deve contribuir para a melhoria da vida de milhares de pessoas
+</details>
 
-Entrega 1 – Arquitetura de Fluxo de dados do DW:
----
-
+## Entrega 1 – Arquitetura de Fluxo de dados do DW:
 Desenhe uma arquitetura de fluxo de dados para o projeto do DW. Considere extrações da parte Back-end do Sistema mobile da cooperativa. Considere, no projeto de arquitetura, mecanismos que garantam a qualidade dos dados.
 
-Entrega 2 – Modelagem Dimensional:
----
+## Entrega 2 – Modelagem Dimensional:
 Faça a MODELAGEM DIMENSIONAL de um DATA MART para armazenar os dados coletados pelo aplicativo da cooperativa que permita responder a perguntas de negócio (forneça para cada item a consulta SQL correspondente):
 
 Estudo do comportamento do agricultor:
