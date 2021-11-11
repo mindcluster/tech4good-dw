@@ -64,7 +64,6 @@ ENGINE = InnoDB;
 -- Table `FACTPRODUCTION`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FACTPRODUCTION` (
-  `ID` INT NOT NULL AUTO_INCREMENT,
   `DATE_ID` INT NOT NULL,
   `ITEM_ID` INT NOT NULL,
   `PRODUCER_ID` INT NOT NULL,

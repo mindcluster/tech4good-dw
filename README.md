@@ -1,6 +1,6 @@
 # Projeto Tech for Good - Dataware House
 
-<img alt="Arquitetura da Solução" src="./arquitetura/DW Fome Zero.drawio.png">
+<img alt="Arquitetura da Solução" src="./arquitetura/DW Fome Zero.drawio.png" width="100%">
 
 <details>
 <summary>Desafio</summary>
@@ -87,6 +87,15 @@ Scripts para criar e popular o banco de dados do projeto de DW.
 
 Visualização dos dados no aplicativo Power BI.
 
+## Modelagem Dimensional
+
+<img alt="Modelagem Dimensional" src="./arquitetura/MD Fome Zero.png" width="700">
+
+- FACTPRODUCTION
+- PRODUCER
+- DATE
+- ITEM
+- LOCATION
 
 ## Extra: Dashboard
 
