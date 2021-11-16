@@ -84,7 +84,7 @@ FROM
     ITEM AS I,
     DATE AS D
 WHERE
-    ITEM_ID IN (1 , 2, 3, 11)
+    ITEM_ID IN (1, 2, 3, 11) /* peixes, ovos de galinhas, frangos de corte, ovos de codorna */
 	AND FP.ITEM_ID = I.ID
 	AND FP.DATE_ID = D.ID
 GROUP BY 
@@ -111,7 +111,7 @@ WHERE
     FP.ITEM_ID = I.ID
 	AND FP.PRODUCER_ID = P.ID
 GROUP BY PRODUCT, PRODUCER
-ORDER BY QTD ASC, I.NAME
+ORDER BY QTD ASC
 LIMIT 10;
 ```
 
