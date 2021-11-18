@@ -30,16 +30,16 @@ FROM
     ITEM AS I,
     PRODUCER AS P
 WHERE
-    FP.ITEM_ID = I.ID
+    FP.ITEM_ID = I.ID 
+    AND ITEM_ID IN (1 , 2, 3, 11)
 	AND FP.PRODUCER_ID = P.ID
 GROUP BY PRODUCT, PRODUCER
-ORDER BY QTD ASC, I.NAME
-LIMIT 10;
+ORDER BY I.NAME, QTD ASC;
 
 /*- A cooperativa também está interessada em conhecer a lista dos 10 agricultores que mais produzem, considerando cada tipo de alimento, 
 para identificar eventuais melhorias no processo de produção de alimentos que possa ser replicada aos demais agricultores;*/
 
-SELECT
+SELECT 
     I.NAME AS PRODUCT, 
     P.NAME AS PRODUCER,
     SUM(FP.QTD_PRODUCT) AS QTD
@@ -48,8 +48,8 @@ FROM
     ITEM AS I,
     PRODUCER AS P
 WHERE
-    FP.ITEM_ID = I.ID
+    FP.ITEM_ID = I.ID 
+    AND ITEM_ID IN (1, 2, 3, 11)
 	AND FP.PRODUCER_ID = P.ID
 GROUP BY PRODUCT, PRODUCER
-ORDER BY QTD DESC
-LIMIT 10;
+ORDER BY I.NAME, QTD DESC;
